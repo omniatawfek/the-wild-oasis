@@ -35,6 +35,7 @@ function SignupForm() {
           type="email"
           id="email"
           disabled={isLoading}
+          autoComplete="email"
           {...register("email", {
             required: "this field is required",
             pattern: {
@@ -53,6 +54,7 @@ function SignupForm() {
           type="password"
           id="password"
           disabled={isLoading}
+          autoComplete="new-password"
           {...register("password", {
             required: "this field is required",
             minLength: {
